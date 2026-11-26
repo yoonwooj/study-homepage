@@ -912,7 +912,7 @@ textarea:focus-visible){
 .marketing-site a{text-decoration:none}
 .marketing-header{height:76px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .marketing-brand{display:inline-flex;align-items:center;gap:10px;color:var(--m-ink);font-weight:850;font-size:.95rem;white-space:nowrap}
-.marketing-brand-mark{width:116px;height:72px;flex:0 0 116px;padding-inline:10px;box-sizing:border-box;border-radius:14px;background:linear-gradient(145deg,#0a6848 0%,#119866 48%,#35c486 100%);display:grid;place-items:center;overflow:hidden;position:relative;color:#fff;font-family:Arial,sans-serif;font-weight:900;box-shadow:0 4px 12px rgba(8,127,83,.16)}
+.marketing-brand-mark{width:84px;height:72px;flex:0 0 84px;padding-inline:0;box-sizing:border-box;border-radius:14px;background:linear-gradient(145deg,#0a6848 0%,#119866 48%,#35c486 100%);display:grid;place-items:center;overflow:hidden;position:relative;color:#fff;font-family:Arial,sans-serif;font-weight:900;box-shadow:0 4px 12px rgba(8,127,83,.16)}
 
 .marketing-brand-type{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transform:rotate(-10deg);font-size:1.22rem;line-height:.74;letter-spacing:-.075em;text-shadow:0 2px 2px rgba(0,45,26,.28);white-space:nowrap}
 .marketing-brand-type span:first-child{font-size:.72em;letter-spacing:-.035em}
@@ -1033,7 +1033,22 @@ textarea:focus-visible){
   .marketing-site .homepage-demo{grid-template-columns:repeat(2,minmax(0,1fr))}
   .marketing-site .homepage-subject:last-child{grid-column:1/-1;max-width:calc(50% - 8px);width:100%;justify-self:center}
 }
+.marketing-menu-toggle{display:none}
+.marketing-mobile-menu{display:none}
 @media(max-width:699px){
+  .marketing-header{position:relative;z-index:20}
+  .marketing-header-actions{display:none}
+  .marketing-menu-toggle{display:flex;width:40px;height:40px;padding:9px;border:1px solid #dcebe2;border-radius:10px;background:#fff;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}
+  .marketing-menu-toggle span{display:block;width:20px;height:2px;border-radius:2px;background:#176b49}
+  .marketing-mobile-menu{display:block;position:absolute;top:calc(100% - 1px);left:12px;right:12px;padding:14px;border:1px solid #e1eee6;border-radius:14px;background:#fff;box-shadow:0 14px 32px rgba(20,65,42,.14)}
+  .marketing-mobile-menu nav{display:grid;gap:2px;padding-bottom:10px;border-bottom:1px solid #edf3ef}
+  .marketing-mobile-menu nav a,.marketing-mobile-login{padding:12px 10px;color:#40594b;font-size:.9rem;font-weight:750}
+  .marketing-mobile-menu-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:10px}
+  .marketing-mobile-login,.marketing-mobile-signup,.marketing-mobile-trial{display:flex;align-items:center;justify-content:center;border-radius:9px;font-size:.84rem;font-weight:800}
+  .marketing-mobile-login{background:#f1f7f3}
+  .marketing-mobile-signup{padding:11px 8px;background:#e8f6ee;color:#087f53}
+  .marketing-mobile-trial{grid-column:1/-1;padding:12px 8px;background:var(--m-green);color:#fff}
+
   .marketing-site{padding-bottom:72px}
   .marketing-header{height:62px;padding:0 16px}
   .marketing-brand{font-size:.82rem;gap:7px}.marketing-brand-mark{width:43px;height:40px;font-size:.65rem}
