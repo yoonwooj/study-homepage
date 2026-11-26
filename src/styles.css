@@ -1112,3 +1112,23 @@ textarea:focus-visible){
   .marketing-learning-type h3{margin:0 0 4px}
   .marketing-learning-type p{margin:0}
 }
+
+/* 실제 학습 화면 미리보기 */
+
+.marketing-extra-card{display:grid;grid-template-columns:minmax(0,1fr) 190px;align-items:center;gap:18px;min-height:330px;padding:26px 24px}
+.marketing-extra-copy{position:relative;z-index:1}
+.marketing-screen-frame{width:100%;max-width:190px;justify-self:end;align-self:stretch;max-height:350px;overflow:hidden;border:5px solid #fff;border-radius:24px;background:#fff;box-shadow:0 12px 30px rgba(24,50,38,.16)}
+.marketing-screen-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+.marketing-extra-card>b{display:none}
+.marketing-extra-card.quote .marketing-extra-copy>span{color:#087f9e}
+@media(max-width:699px){
+  .marketing-extras{grid-template-columns:1fr;gap:14px;margin-bottom:64px;padding:0 16px}
+  .marketing-extra-card{grid-template-columns:minmax(0,1fr) 132px;gap:12px;min-height:250px;padding:20px 16px}
+  .marketing-extra-card h3{font-size:1.12rem}
+  .marketing-extra-card p{font-size:.76rem}
+  .marketing-screen-frame{max-width:132px;max-height:280px;border-width:4px;border-radius:19px}
+}
+@media(min-width:700px) and (max-width:1099px){
+  .marketing-extra-card{grid-template-columns:minmax(0,1fr) 150px;padding:22px;gap:12px}
+  .marketing-screen-frame{max-width:150px}
+}
