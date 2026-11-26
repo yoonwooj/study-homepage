@@ -1,5 +1,3 @@
-import HomepageQuestionPreview from './HomepageQuestionPreview.jsx'
-
 const subjects = [
   { name: '국어', desc: '읽고 이해하고, 생각을 표현하는 힘', icon: '가', tone: 'kor' },
   { name: '사회', desc: '우리 주변과 세상을 알아가는 공부', icon: '⌖', tone: 'soc' },
@@ -21,6 +19,7 @@ export default function LandingPage() {
         </nav>
         <div className="marketing-header-actions">
           <a className="marketing-login" href="https://study.yoonwooj.workers.dev/login">로그인</a>
+          <a className="marketing-nav-cta marketing-signup" href="https://study.yoonwooj.workers.dev/signup">회원가입</a>
           <a className="marketing-nav-cta" href="https://study.yoonwooj.workers.dev/trial">2주 무료 체험</a>
         </div>
       </header>
@@ -36,8 +35,7 @@ export default function LandingPage() {
                 <span>✓ 평일 매일 20문제</span><span>✓ PC·태블릿·모바일</span><span>✓ 약정 없이 시작</span>
               </div>
               <div className="marketing-hero-actions">
-                <a className="marketing-button primary" href="https://study.yoonwooj.workers.dev/trial">첫 2주 무료로 시작하기 <span>→</span></a>
-                <a className="marketing-text-link" href="#preview">실제 문제 먼저 보기</a>
+                <a className="marketing-text-link" href="#preview">학습 방식 살펴보기 <span>→</span></a>
               </div>
               <p className="marketing-hero-note">최초 1회 · 자동 결제 없음 · 카드 등록 없음</p>
             </div>
@@ -98,12 +96,15 @@ export default function LandingPage() {
 
         <section className="marketing-section marketing-preview-section" id="preview">
           <div className="marketing-section-heading centered">
-            <span className="marketing-eyebrow">REAL LEARNING PREVIEW</span>
-            <h2>실제 학습 화면을<br />먼저 경험해 보세요.</h2>
-            <p>서비스에서 사용하는 문제 풀이 화면으로 객관식·OX·주관식 유형을 확인할 수 있어요.</p>
+            <span className="marketing-eyebrow">SIMPLE LEARNING</span>
+            <h2>다양한 방식으로<br />생각하는 힘을 길러요.</h2>
+            <p>문제 유형을 다양하게 구성해 아이가 이해한 내용을 여러 방식으로 확인합니다.</p>
           </div>
-          <HomepageQuestionPreview />
-          <div className="marketing-preview-cta"><p>우리 아이에게 맞는 학습인지 직접 확인해 보세요.</p><a className="marketing-button primary" href="https://study.yoonwooj.workers.dev/trial">2주 무료 체험 신청하기 <span>→</span></a></div>
+          <div className="marketing-learning-types">
+            <article className="marketing-learning-type"><span className="learning-type-icon">✓</span><h3>4지선다형</h3><p>보기에서 알맞은 답을 선택하며 핵심 개념을 확인해요.</p></article>
+            <article className="marketing-learning-type"><span className="learning-type-icon">O X</span><h3>OX형</h3><p>문장을 읽고 맞는 내용인지 스스로 판단해요.</p></article>
+            <article className="marketing-learning-type"><span className="learning-type-icon">Aa</span><h3>주관식</h3><p>배운 내용을 떠올려 직접 답을 입력해요.</p></article>
+          </div>
         </section>
 
         <section className="marketing-extras">
