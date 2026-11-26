@@ -912,7 +912,7 @@ textarea:focus-visible){
 .marketing-site a{text-decoration:none}
 .marketing-header{height:76px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .marketing-brand{display:inline-flex;align-items:center;gap:10px;color:var(--m-ink);font-weight:850;font-size:.95rem;white-space:nowrap}
-.marketing-brand-mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#087f53,#38c58a);display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.1rem}
+.marketing-brand-mark{width:48px;height:44px;border-radius:11px;background:linear-gradient(135deg,#087f53,#38c58a);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.72rem;line-height:1.02;letter-spacing:-.035em}
 .marketing-nav,.marketing-header-actions{display:flex;align-items:center;gap:28px}
 .marketing-nav a,.marketing-login{font-size:.88rem;font-weight:700;color:#52665b}
 .marketing-header-actions{gap:18px}
@@ -1032,7 +1032,7 @@ textarea:focus-visible){
 @media(max-width:699px){
   .marketing-site{padding-bottom:72px}
   .marketing-header{height:62px;padding:0 16px}
-  .marketing-brand{font-size:.82rem;gap:7px}.marketing-brand-mark{width:30px;height:30px}
+  .marketing-brand{font-size:.82rem;gap:7px}.marketing-brand-mark{width:43px;height:40px;font-size:.65rem}
   .marketing-nav{display:none}
   .marketing-header-actions{gap:12px}.marketing-login{font-size:.78rem}
   .marketing-nav-cta{padding:9px 11px;font-size:.73rem}
