@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const subjects = [
   { name: '국어', desc: '읽고 이해하고, 생각을 표현하는 힘', icon: '가', tone: 'kor' },
   { name: '사회', desc: '우리 주변과 세상을 알아가는 공부', icon: '⌖', tone: 'soc' },
@@ -5,6 +7,8 @@ const subjects = [
 ]
 
 export default function LandingPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const closeMobileMenu = () => setMobileMenuOpen(false)
   return (
     <div className="marketing-site">
       <header className="marketing-header">
@@ -22,6 +26,23 @@ export default function LandingPage() {
           <a className="marketing-nav-cta marketing-signup" href="https://study.yoonwooj.workers.dev/signup">회원가입</a>
           <a className="marketing-nav-cta" href="https://study.yoonwooj.workers.dev/trial">2주 무료 체험</a>
         </div>
+        <button className="marketing-menu-toggle" type="button" aria-label={mobileMenuOpen ? '메뉴 닫기' : '메뉴 열기'} aria-expanded={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <span /><span /><span />
+        </button>
+        {mobileMenuOpen && (
+          <div className="marketing-mobile-menu">
+            <nav aria-label="모바일 주요 메뉴">
+              <a href="#features" onClick={closeMobileMenu}>서비스 소개</a>
+              <a href="#subjects" onClick={closeMobileMenu}>과목 안내</a>
+              <a href="#preview" onClick={closeMobileMenu}>학습 미리보기</a>
+            </nav>
+            <div className="marketing-mobile-menu-actions">
+              <a className="marketing-mobile-login" href="https://study.yoonwooj.workers.dev/login">로그인</a>
+              <a className="marketing-mobile-signup" href="https://study.yoonwooj.workers.dev/signup">회원가입</a>
+              <a className="marketing-mobile-trial" href="https://study.yoonwooj.workers.dev/trial">2주 무료 체험</a>
+            </div>
+          </div>
+        )}
       </header>
 
       <main>
