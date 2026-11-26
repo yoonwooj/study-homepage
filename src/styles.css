@@ -1077,3 +1077,19 @@ textarea:focus-visible){
   .marketing-mobile-cta{position:fixed;z-index:30;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:center;gap:16px;min-height:52px;border-radius:14px;background:#13a66b;color:#fff;font-size:.9rem;font-weight:850;box-shadow:0 8px 24px rgba(8,127,83,.28)}
 }
 @media(prefers-reduced-motion:reduce){.marketing-button{transition:none}}
+
+
+/* 독립 홈페이지: 학습 유형 안내 */
+.marketing-header-actions .marketing-signup{background:#e8f6ee;color:#087f53;border:1px solid #ccebd9}
+.marketing-learning-types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:980px;margin:0 auto}
+.marketing-learning-type{padding:28px 24px;border:1px solid #e1eee6;border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(26,70,45,.05)}
+.marketing-learning-type .learning-type-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#eaf7ef;color:#087f53;font-weight:900;font-size:1rem}
+.marketing-learning-type h3{margin:18px 0 8px;font-size:1.05rem;color:#243b2e}
+.marketing-learning-type p{font-size:.86rem;line-height:1.7;color:#718078;word-break:keep-all}
+@media(max-width:760px){
+  .marketing-learning-types{grid-template-columns:1fr;gap:10px}
+  .marketing-learning-type{display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:center;padding:17px}
+  .marketing-learning-type .learning-type-icon{grid-row:span 2}
+  .marketing-learning-type h3{margin:0 0 4px}
+  .marketing-learning-type p{margin:0}
+}
