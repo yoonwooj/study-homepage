@@ -31,11 +31,6 @@ export default function LandingPage() {
         </button>
         {mobileMenuOpen && (
           <div className="marketing-mobile-menu">
-            <nav aria-label="모바일 주요 메뉴">
-              <a href="#features" onClick={closeMobileMenu}>서비스 소개</a>
-              <a href="#subjects" onClick={closeMobileMenu}>과목 안내</a>
-              <a href="#preview" onClick={closeMobileMenu}>학습 미리보기</a>
-            </nav>
             <div className="marketing-mobile-menu-actions">
               <a className="marketing-mobile-login" href="https://study.yoonwooj.workers.dev/login">로그인</a>
               <a className="marketing-mobile-signup" href="https://study.yoonwooj.workers.dev/signup">회원가입</a>
