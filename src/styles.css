@@ -912,7 +912,7 @@ textarea:focus-visible){
 .marketing-site a{text-decoration:none}
 .marketing-header{height:76px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .marketing-brand{display:inline-flex;align-items:center;gap:10px;color:var(--m-ink);font-weight:850;font-size:.95rem;white-space:nowrap}
-.marketing-brand-mark{width:96px;height:72px;flex:0 0 96px;border-radius:14px;background:linear-gradient(145deg,#075b3d 0%,#0b8e5b 48%,#29bd7d 100%);display:grid;place-items:center;overflow:hidden;position:relative;color:#fff;font-family:Arial,sans-serif;font-weight:900;box-shadow:0 4px 12px rgba(8,127,83,.16)}
+.marketing-brand-mark{width:116px;height:72px;flex:0 0 116px;padding-inline:10px;box-sizing:border-box;border-radius:14px;background:linear-gradient(145deg,#0a6848 0%,#119866 48%,#35c486 100%);display:grid;place-items:center;overflow:hidden;position:relative;color:#fff;font-family:Arial,sans-serif;font-weight:900;box-shadow:0 4px 12px rgba(8,127,83,.16)}
 
 .marketing-brand-type{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transform:rotate(-10deg);font-size:1.22rem;line-height:.74;letter-spacing:-.075em;text-shadow:0 2px 2px rgba(0,45,26,.28);white-space:nowrap}
 .marketing-brand-type span:first-child{font-size:.72em;letter-spacing:-.035em}
