@@ -9,7 +9,7 @@ export default function LandingPage() {
     <div className="marketing-site">
       <header className="marketing-header">
         <a className="marketing-brand" href="/" aria-label="홈으로">
-          <span className="marketing-brand-mark">S</span>
+          <span className="marketing-brand-mark"><span>kids</span><span>Quiz</span></span>
           <span>매일 성장하는 공부 습관</span>
         </a>
         <nav className="marketing-nav" aria-label="주요 메뉴">
@@ -120,7 +120,7 @@ export default function LandingPage() {
           <a className="marketing-final-login" href="https://study.yoonwooj.workers.dev/login">이미 계정이 있나요? 로그인</a>
         </section>
       </main>
-      <footer className="marketing-footer"><a className="marketing-brand" href="/"><span className="marketing-brand-mark">S</span><span>매일 성장하는 공부 습관</span></a><span>국어 · 사회 · 과학 | 매일 꾸준한 학습</span></footer>
+      <footer className="marketing-footer"><a className="marketing-brand" href="/"><span className="marketing-brand-mark"><span>kids</span><span>Quiz</span></span><span>매일 성장하는 공부 습관</span></a><span>국어 · 사회 · 과학 | 매일 꾸준한 학습</span></footer>
       <a className="marketing-mobile-cta" href="https://study.yoonwooj.workers.dev/trial">2주 무료 체험 시작하기 <span>→</span></a>
     </div>
   )
