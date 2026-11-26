@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { hanjaScreen, quoteScreen } from '../assets/actualScreens'
 
 const subjects = [
   { name: '국어', desc: '읽고 이해하고, 생각을 표현하는 힘', icon: '가', tone: 'kor' },
@@ -124,8 +125,14 @@ export default function LandingPage() {
         </section>
 
         <section className="marketing-extras">
-          <div className="marketing-extra-card"><span>한자 학습</span><h3>한자 6·7·8급<br />읽기와 쓰기</h3><p>교과 학습과 함께 어휘의 기초를 다져요.</p><b>漢</b></div>
-          <div className="marketing-extra-card quote"><span>매일의 한마디</span><h3>속담과 영어 명언으로<br />생각의 폭 넓히기</h3><p>짧은 문장 하나로 새로운 배움을 더해요.</p><b>“ ”</b></div>
+          <article className="marketing-extra-card">
+            <div className="marketing-extra-copy"><span>한자 학습</span><h3>하루한자<br />읽고 쓰며 익히는 한자</h3><p>획순을 따라 직접 써 보며 한 글자씩 익혀요.</p></div>
+            <div className="marketing-screen-frame"><img src={hanjaScreen} alt="하루한자 한자 획순 따라 쓰기 실제 학습 화면" loading="lazy" /></div>
+          </article>
+          <article className="marketing-extra-card quote">
+            <div className="marketing-extra-copy"><span>매일의 한마디</span><h3>속담과 영어 명언으로<br />생각의 폭 넓히기</h3><p>오늘의 문장을 듣고 따라 읽으며 좋은 표현을 만나요.</p></div>
+            <div className="marketing-screen-frame"><img src={quoteScreen} alt="오늘의 영어 명언과 듣기 및 반복 재생 실제 화면" loading="lazy" /></div>
+          </article>
         </section>
 
         <section className="marketing-final-cta">
